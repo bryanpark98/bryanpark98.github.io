@@ -1,6 +1,0 @@
-defaults:
-  - scope:
-      path: "src"
-      type: "file"
-    values:
-      layout: "default"

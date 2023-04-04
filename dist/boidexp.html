@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bryan's Website</title>
+  <link rel="stylesheet" type="text/css" href="/main.af46ece4.css">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="overlaytype">
+    <p id="typing"></p>
+
+    <script>var text = "Boid's Algorithm is a remarkable example of how simple rules can give rise to complex and intelligent behavior. \nInspired by the flocking behavior of birds, the algorithm simulates the movements of a group of entities, such as birds or fish, as they interact with one another. \nBased on the principles of separation, alignment, and cohesion, Boid's algorithm can generate intricate and visually stunning patterns of movement. Try playing around with it!";
+var speed = 25; // The speed of typing in milliseconds per character
+
+var stopDelete = false; // Flag to stop deletion
+
+function typeWriter(text, speed) {
+  var i = 0;
+  var element = document.getElementById("typing");
+
+  function type() {
+    if (i < text.length && !stopDelete) {
+      element.innerHTML += text.charAt(i);
+      i++;
+      setTimeout(type, speed);
+    } else {
+      stopDelete = true; // Set flag to true when typing is complete
+
+      setTimeout(deleteType, 30000); // Wait 30 seconds before deletion
+    }
+  }
+
+  function deleteType() {
+    var len = text.length;
+
+    if (len <= 2) {
+      stopDelete = false;
+      return;
+    }
+
+    while (len > 0 && stopDelete) {
+      len--;
+      var charToDelete = text.charAt(len);
+
+      if (charToDelete === " " && text.charAt(len - 1) === " ") {
+        // Stop deletion if two consecutive spaces are encountered
+        stopDelete = false;
+        break;
+      }
+
+      element.innerHTML = element.innerHTML.slice(0, -1);
+      setTimeout(deleteType, speed);
+    }
+  }
+
+  type();
+}
+
+typeWriter(text, speed);</script>
+  </div>
+
+  <script src="/main.c39d6dcf.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+body {
+    margin:0;
+    padding:0;
+    overflow:hidden;
+    /* font-family: 'DM Serif Display', serif; */
+    font-family: 'DM Sans', sans-serif;
+    color: white;
+}
+
+canvas {
+    display:block;
+}
+
+h1 {
+    font-size: 60px;
+    color: white;
+    font-weight: 200;
+}
+
+p1 {
+    position: absolute;
+    top: 0.5in;
+    left: 0.5in;
+    margin: 0.5in;
+    font-weight: 200;
+    font-size: 24px;
+}
+
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.overlay {
+    position: absolute; 
+    display: flex; 
+    width: 100vw; 
+    height: 100vh; 
+    padding: 25px;
+    justify-content: center; 
+    align-items: center;
+}
+
+.intro-block {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+}
+
+
+.propage {
+    display: flex;
+    flex-direction: row;
+}
+
+.container {
+    flex-basis: 50%;
+}
+
+.container:last-child {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.container img {
+    max-width: 100%;
+}
+
+
+
+
+
+/*# sourceMappingURL=/main.af46ece4.css.map */

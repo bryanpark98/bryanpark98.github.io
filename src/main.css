@@ -45,21 +45,24 @@ a {
 }
 
 .overlay-boid {
-    position: absolute; /* Use absolute positioning */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100vh;
     padding: 25px;
-    width: 50%; /* Set the width to cover half of the screen */
-    height: 100vh; /* Set the height to cover the full viewport height */
-    background-color: transparent;
-    top: 0; /* Position at the top */
-    left: 0; /* Align to the left side of the screen */
-    margin: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black background, adjust as needed */
+    box-sizing: border-box; /* Include padding in the width calculation */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
 }
 
 .boid {
-    text-align: left; /* Align text to the left */
-    margin-left: 25px; /* Adjust as needed */
-    width: auto; /* Adjust the width as needed */
-    height: auto; /* Adjust the height as needed */
+    text-align: left;
+    color: white; /* Ensure text is visible on the dark background */
+    max-width: 100%; /* Ensure the content fits within the .overlay-boid */
+    margin: 0; /* Reset any default margin */
 }
 
 .intro-block {

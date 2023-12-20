@@ -45,11 +45,13 @@ a {
 }
 
 .overlay-boid {
-    position: relative; /* Changed from absolute to relative */
+    position: relative; 
+    display: flex; 
+    width: 100vw; 
+    height: 100vh; 
     padding: 25px;
-    width: 100%;
-    height: auto; /* Allow the container to grow as needed */
     background-color: transparent;
+    margin: 0; 
 }
 
 .boid {
@@ -57,6 +59,7 @@ a {
     margin-left: 25px; /* Adjust as needed */
     width: auto; /* Adjust the width as needed */
     height: auto; /* Adjust the height as needed */
+    color: white;
 }
 
 .intro-block {

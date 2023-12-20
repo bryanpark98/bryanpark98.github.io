@@ -1,0 +1,118 @@
+body {
+    margin:0;
+    padding:0;
+    overflow:hidden;
+    /* font-family: 'DM Serif Display', serif; */
+    font-family: 'DM Sans', sans-serif;
+    color: white;
+}
+
+canvas {
+    display:block;
+}
+
+h1 {
+    font-size: 60px;
+    color: white;
+    font-weight: 200;
+}
+
+p1 {
+    position: absolute;
+    top: 0.5in;
+    left: 0.5in;
+    margin: 0.5in;
+    font-weight: 200;
+    font-size: 24px;
+}
+
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.overlay {
+    position: absolute; 
+    display: flex; 
+    width: 100vw; 
+    height: 100vh; 
+    padding: 25px;
+    justify-content: center; 
+    align-items: center;
+    background-color: transparent;
+    margin: 0; 
+}
+
+.intro-block {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+}
+
+
+.propage {
+    display: flex;
+    flex-direction: row;
+}
+
+.container {
+    flex-basis: 50%;
+}
+
+.container:last-child {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.container img {
+    max-width: 100%;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #4A90E2; 
+}
+
+.boid-overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: transparent; /* Ensures overlay is transparent */
+}
+
+.boid-container {
+    background-color: #333; /* Gray background for content */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    width: 100%;
+    max-width: 800px;
+}
+
+.boid-text-block p {
+    background-color: #f8f8f8;
+    color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.boid-title {
+    font-size: 2em;
+    text-align: center;
+    color: #f8f8f8;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 600px) {
+    .boid-container {
+        padding: 10px;
+    }
+
+    .boid-title {
+        font-size: 1.5em;
+    }
+}

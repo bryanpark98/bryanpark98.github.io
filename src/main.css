@@ -45,23 +45,18 @@ a {
 }
 
 .overlay-boid {
-    position: absolute; 
-    display: flex; 
-    width: 100vw; 
-    height: 100vh; 
+    position: relative; /* Changed from absolute to relative */
     padding: 25px;
-    justify-content: left; 
+    width: 100%;
+    height: auto; /* Allow the container to grow as needed */
     background-color: transparent;
-    margin: 0; 
 }
 
-.boid{
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    background-color: white;
-    border-radius: 50%;
-    z-index: 1;
+.boid {
+    text-align: left; /* Align text to the left */
+    margin-left: 25px; /* Adjust as needed */
+    width: auto; /* Adjust the width as needed */
+    height: auto; /* Adjust the height as needed */
 }
 
 .intro-block {

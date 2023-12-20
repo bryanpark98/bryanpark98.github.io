@@ -45,11 +45,14 @@ a {
 }
 
 .overlay-boid {
-    position: relative; /* Changed from absolute to relative */
+    position: absolute; /* Use absolute positioning */
     padding: 25px;
-    width: 100%;
-    height: auto; /* Allow the container to grow as needed */
+    width: 50%; /* Set the width to cover half of the screen */
+    height: 100vh; /* Set the height to cover the full viewport height */
     background-color: transparent;
+    top: 0; /* Position at the top */
+    left: 0; /* Align to the left side of the screen */
+    margin: 0;
 }
 
 .boid {

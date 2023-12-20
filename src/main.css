@@ -74,38 +74,6 @@ a:hover {
     color: #4A90E2; 
 }
 
-.boid-overlay {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    padding: 20px;
-    background-color: transparent; /* Ensures overlay is transparent */
-}
-
-.boid-container {
-    background-color: #333; /* Gray background for content */
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-    width: 100%;
-    max-width: 800px;
-}
-
-.boid-text-block p {
-    background-color: #f8f8f8;
-    color: #333;
-    padding: 10px;
-    border-radius: 5px;
-    margin-bottom: 15px;
-}
-
-.boid-title {
-    font-size: 2em;
-    text-align: center;
-    color: #f8f8f8;
-    margin-bottom: 20px;
-}
 
 @media (max-width: 600px) {
     .boid-container {

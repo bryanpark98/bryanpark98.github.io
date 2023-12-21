@@ -61,13 +61,12 @@ a {
 .yoricontainer {
     flex-basis: 50%; /* Each container takes up half of the overlay width */
     max-width: 50%; /* Prevent containers from stretching beyond 50% width */
-    padding: 15px; /* Adjust padding as needed */
     box-sizing: border-box; /* Include padding in width calculation */
     overflow: hidden; /* Prevent content from spilling out */
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 50%;
+    margin-left: 25%;
 
 
 }
@@ -93,6 +92,8 @@ a {
 
 .container {
     flex-basis: 50%;
+
+
 }
 
 .container:last-child {

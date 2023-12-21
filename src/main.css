@@ -58,6 +58,14 @@ a {
     justify-content: center; /* Center content vertically */
 }
 
+.yoricontainer {
+    flex-basis: 50%; /* Each container takes up half of the overlay width */
+    max-width: 50%; /* Prevent containers from stretching beyond 50% width */
+    padding: 15px; /* Adjust padding as needed */
+    box-sizing: border-box; /* Include padding in width calculation */
+    overflow: hidden; /* Prevent content from spilling out */
+}
+
 .boid {
     text-align: left;
     color: white; /* Ensure text is visible on the dark background */
